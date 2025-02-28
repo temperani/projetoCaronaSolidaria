@@ -17,7 +17,7 @@ Antes de confirmar a carona, o receptor vê um resumo:
 Distância extra: 3km (Custo estimado: R$3)
 Contribuição voluntária: R$0 (com opção de editar)
 Assim, tudo fica claro e sem surpresas.
-📊 4. Relatório para o Motorista:
+4. Relatório para o Motorista:
 Um painel simples onde o ofertante vê:
 Quantas caronas ele ofereceu.
 Quantos desvios foram feitos.
