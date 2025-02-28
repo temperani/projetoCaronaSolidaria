@@ -23,3 +23,7 @@ Quantas caronas ele ofereceu.
 Quantos desvios foram feitos.
 Quanto ele recebeu em colaborações.
 Essas ideias equilibram bem a solidariedade e a praticidade!
+
+Desenvolvimento da tela de login utilizando o canal do Guilherme Chinaglia.
+1 - Parte https://www.youtube.com/watch?v=GtsNZtzZiec&t=58s
+2 - Parte https://www.youtube.com/watch?v=NbMb0QPr2Iw
