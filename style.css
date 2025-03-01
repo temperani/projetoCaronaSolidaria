@@ -9,4 +9,36 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #ecf0f1;
+}
+
+
+.conteinerSecundario{
+    display: flex;
+    border-radius: 15px;
+    background-color: #FFF;
+    width: 80%;
+    height: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+ .listaSocialMidia{
+    display: flex;
+ }
+
+ .descricao {
+    display: flex;
+    flex-direction: column;
+ }
+
+.conteinerTerceario{
+    position: absolute;
+    display: none;
+}
+.colunaUm{
+    text-align: center;
+    flex: 1 0 auto;
+}
+.colunaDois{
+    flex: 2 0 auto;
 }
