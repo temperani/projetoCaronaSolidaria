@@ -2,9 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
-.conteinerPrimario{
+.conteiner{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +13,7 @@
     background-color: #ecf0f1;
 }
 
-.conteinerSecundario, .conteinerTerceario{
+.conteinerPrimario, .conteinerSecundario{
     display: flex;
     border-radius: 15px;
     background-color: #FFF;
@@ -22,7 +23,7 @@
     align-items: center;
     position: relative;
 }
-.conteinerSecundario, .conteinerTerceario::before{
+.conteinerPrimario, .conteinerSecundario::before{
     content: "";
     position: absolute;
     background-color:#58af9b ;
@@ -53,7 +54,27 @@
     flex: 2 0 auto;
 }
 .titulo{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     text-transform: capitalize;
+}
+.titulo-BoasVindas{
+    color: #FFF;
+}
+.descricao{
+    font-size: 14px;
+    font-weight: 300;
+    color:#FFF;
+    line-height: 30px;
+}
+.btn{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #FFF;
+    font-size: 10px;
+    padding: 10px 50px;
+}
+.btn-BoasVindas{
+    background-color: transparent;
+    border: 1px #FFF;
 }
