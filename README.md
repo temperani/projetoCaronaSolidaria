@@ -27,4 +27,5 @@ Essas ideias equilibram bem a solidariedade e a praticidade!
 Desenvolvimento da tela de login utilizando o canal do Guilherme Chinaglia.
 1 - Parte https://www.youtube.com/watch?v=GtsNZtzZiec
 2 - Parte https://www.youtube.com/watch?v=NbMb0QPr2Iw
-3 - Parte 
+3 - Parte https://www.youtube.com/watch?v=hzuSbLe6v7Y
+
