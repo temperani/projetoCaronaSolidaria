@@ -13,7 +13,7 @@
     background-color: #ecf0f1;
 }
 
-.conteinerPrimario, .conteinerSecundario{
+.primeiroConteiner, .segundoConteiner{
     display: flex;
     border-radius: 15px;
     background-color: #FFF;
@@ -23,7 +23,7 @@
     align-items: center;
     position: relative;
 }
-.conteinerPrimario, .conteinerSecundario::before{
+.zeroConteiner::before{
     content: "";
     position: absolute;
     background-color:#58af9b ;
@@ -41,7 +41,7 @@
     flex-direction: column;
  }
 
-.conteinerTerceario{
+.segundoConteiner{
     position: absolute;
     display: none;
 }
