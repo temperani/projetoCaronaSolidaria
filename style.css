@@ -13,7 +13,7 @@
     background-color: #ecf0f1;
 }
 
-.primeiroConteiner, .segundoConteiner{
+.zeroConteiner{
     display: flex;
     border-radius: 15px;
     background-color: #FFF;
@@ -30,6 +30,10 @@
     background-color:#58af9b ;
     width: 40%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+    left: 60%;
 }
 
  .listaSocialMidia{
@@ -37,24 +41,54 @@
     list-style-type: none;
  }
 
+ .listaSocialMidia img:hover{
+    background-color: #58af9b;
+    color: #FFF;
+    border-color: #58af9b;
+ }
+
+ .listaSocialMidia li{
+    margin-right: 10px;
+ }
+
+ .socialMidia{
+    margin-top: 1rem;
+ }
+
+.listaSocialMidia li:last-child{
+    margin-right: 0;
+}
+
  form {
     display: flex;
     flex-direction: column;
     width: 55%;
+    text-align: center;
  }
 
  form input{
-    height: 45px;
+    height: 35px;
+    width: 80%;
     border: none;
     background-color: #ecf0f1;
-    margin: 8px;
  }
 
-.segundoConteiner{
+ .primeiroConteiner{
     position: absolute;
     display: none;
 }
 
+ 
+.segundoConteiner{
+    position: absolute;
+    display: flex;
+}
+.segundoConteiner .colunaUm{
+    order: 2;
+}
+.segundoConteiner .colunaDois{
+    order: 1;
+}
 .colunaUm{
     text-align: center;
     flex: 1 0 auto;
@@ -107,21 +141,63 @@
     font-weight: bold;
     width: 150px;
     align-self: center;
+    border: none;
+    text-align: center;
+    margin-top: 1rem;
 }
 
-.btn-primeiro{
+.btn-um{
     background-color: transparent;
     border: 1px solid #FFF;
 }
-.btn-primeiro:hover{
+.btn-um:hover{
     background-color: #FFF;
     color: #58af9b;
 }
+
+.btn-dois{
+    background-color: #58af9b;
+    border: 1px solid #58af9b;
+}
+
+.btn-dois:hover{
+    background-color: #FFF;
+    border: 1px solid #58af9b;
+    color: #58af9b;
+}
+
 img{
-    display: block;
     width: 35px;
     height: 35px;
     border: 1px solid #bdc3c7;
     border-radius: 50%;
     line-height: 35px;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    background-color: #ecf0f1;
+    margin: 8px;
+    padding: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+label img{
+    margin-right: 10px;
+}
+
+label input {
+    border: none;
+    background: none;
+    flex: 1;
+    padding: 20px;
+    font-size: 14px;
+    outline: none;
+}
+.password{
+    color: #34495e;
+    font-size: 15px;
+    margin: 15px;
 }
