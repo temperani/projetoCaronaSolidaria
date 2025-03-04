@@ -3,76 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carona Solidária</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
-    <div class="conteiner">
-        <div class="zeroConteiner primeiroConteiner">
-            <div class="colunaUm">
-                <h2 class="titulo titulo-primeiro">Que bom te ver novamente</h2>
-                <p class="descricao descricao-colunaUm">Para ficar em sintonia conosco</p>
-                <p class="descricao descricao-colunaUm">Por favor, faça o login com suas informações cadastradas</p>
-                <button class="btn btn-um">Login</button>
-            </div><!-- colunaUm -->
-            <div class="colunaDois">
-                <h2 class="titulo">Criar conta</h2>
-                <div class="socialMidia">
-                    <ul class="listaSocialMidia">
-                        <li><a href="#"><img src="img/facebook-brands.svg" alt="logoFacebook"></a></li>
-                        <li><a href="#"><img src="img/instagram-brands.svg" alt="logoInstagram"></a></li>
-                        <li><a href="#"><img src="img/linkedin-brands.svg" alt="logoLinkedin"></a></li>
+    <div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Que bom te ver novamente</h2>
+                <p class="description description-primary">Para ficar em sintonia conosco</p>
+                <p class="description description-primary">Por favor, faça o login com suas informações cadastradas</p>
+                <button id="signin" class="btn btn-primary">Login</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar conta</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <img src="img/facebook-brands.svg" alt="Facebook logo">
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <img src="img/instagram-brands.svg" alt="instagram logo">
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <img src="img/linkedin-brands.svg" alt="linkedin logo">
+                            </li>
+                        </a>
                     </ul>
-                </div><!-- socialMidia -->
-                <p class="descricao descricao-colunaDois">Use seu e-mail para registar</p>
-                <form class="formulario">
-                    <label for="">
-                        <img src="img/user-solid.svg" alt="">
+                </div><!-- social media -->
+                <p class="description description-second">Use seu e-mail para registar:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <img src="img/user-solid.svg" alt=" Nome do Usuário"></i>
                         <input type="text" placeholder="Nome">
                     </label>
-                    <label for="">
+                    
+                    <label class="label-input" for="">
                         <img src="img/envelope-solid.svg" alt="">
-                        <input type="email" placeholder="email">
+                        <input type="email" placeholder="Email">
                     </label>
-                    <label for="">
+                    
+                    <label class="label-input" for="">
                         <img src="img/key-solid.svg" alt="">
                         <input type="password" placeholder="Senha">
                     </label>
-                    <button class="btn btn-dois">Cadastrar</button>
+                    
+                    
+                    <button class="btn btn-second">Cadastrar</button>        
                 </form>
-            </div><!-- colunaDois -->
-        </div><!-- primeiroConteiner -->
-        <div class="zeroConteiner segundoConteiner">
-            <div class="colunaUm">
-                <h2 class="titulo titulo-primeiro">Bem Vindo Solidário</h2>
-                <p class="descricao descricao-colunaUm">Por favor, faça o cadastro com suas informações</p>
-                <p class="descricao descricao-colunaUm">e embarque nessa jornada conosco</p>
-                <button class="btn btn-um">Cadastrar</button>
-            </div><!-- colunaUm -->
-            <div class="colunaDois">
-                <h2 class="titulo">Entrar como Solidário</h2>
-                <div class="socialMidia">
-                    <ul class="listaSocialMidia">
-                        <li><a href="#"><img src="img/facebook-brands.svg" alt="logoFacebook"></a></li>
-                        <li><a href="#"><img src="img/instagram-brands.svg" alt="logoInstagram"></a></li>
-                        <li><a href="#"><img src="img/linkedin-brands.svg" alt="logoLinkedin"></a></li>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem Vindo Solidário</h2>
+                <p class="description description-primary">Por favor, faça o cadastro com suas informações</p>
+                <p class="description description-primary">e embarque nessa jornada conosco</p>
+                <button id="signup" class="btn btn-primary">Cadastrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Entrar como Solidário</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <img src="img/facebook-brands.svg" alt="">
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <img src="img/instagram-brands.svg" alt="">
+                            </li>
+                        </a>
+                        <a class="link-social-media" href="#">
+                            <li class="item-social-media">
+                                <img src="img/linkedin-brands.svg" alt="">
+                            </li>
+                        </a>
                     </ul>
-                </div><!-- socialMidia -->
-                <p class="descricao descricao-colunaDois">Use seu e-mail para entrar</p>
-                <form class="formulario">
-                    <label for="">
+                </div><!-- social media -->
+                <p class="description description-second">Use seu e-mail para entrar</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
                         <img src="img/envelope-solid.svg" alt="">
-                        <input type="email" placeholder="email">
+                        <input type="email" placeholder="Email">
                     </label>
-                    <label for="">
+                
+                    <label class="label-input" for="">
                         <img src="img/key-solid.svg" alt="">
                         <input type="password" placeholder="Senha">
                     </label>
-                    <a class="password"  href="#">Esqueceu sua senha?</a>
-                    <button class="btn btn-dois">Entrar</button>
+                
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second">Entrar</button>
                 </form>
-            </div><!-- colunaDois -->
-        </div><!-- segundoConteiner -->
-    </div><!-- Conteiner -->
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>

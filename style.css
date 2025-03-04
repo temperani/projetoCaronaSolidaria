@@ -1,140 +1,75 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    border: 1px solid #bdc3c7;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #95a5a6;
 }
 
-.conteiner{
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background-color: #ecf0f1;
 }
-
-.zeroConteiner{
-    display: flex;
+.content {
+    background-color: #fff;
     border-radius: 15px;
-    background-color: #FFF;
-    width: 80%;
+    width: 960px;
     height: 50%;
     justify-content: space-between;
     align-items: center;
     position: relative;
 }
-
-.zeroConteiner::before{
+.content::before {
     content: "";
     position: absolute;
-    background-color:#58af9b ;
+    background-color: #58af9b;
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
 
-    left: 60%;
+
+    left: 0;
 }
-
- .listaSocialMidia{
-    display: flex;
-    list-style-type: none;
- }
-
- .listaSocialMidia img:hover{
-    background-color: #58af9b;
-    color: #FFF;
-    border-color: #58af9b;
- }
-
- .listaSocialMidia li{
-    margin-right: 10px;
- }
-
- .socialMidia{
-    margin-top: 1rem;
- }
-
-.listaSocialMidia li:last-child{
-    margin-right: 0;
-}
-
- form {
-    display: flex;
-    flex-direction: column;
-    width: 55%;
-    text-align: center;
- }
-
- form input{
-    height: 35px;
-    width: 80%;
-    border: none;
-    background-color: #ecf0f1;
- }
-
- .primeiroConteiner{
-    position: absolute;
-    display: none;
-}
-
- 
-.segundoConteiner{
-    position: absolute;
-    display: flex;
-}
-.segundoConteiner .colunaUm{
-    order: 2;
-}
-.segundoConteiner .colunaDois{
-    order: 1;
-}
-.colunaUm{
-    text-align: center;
-    flex: 1 0 auto;
-    z-index: 10;
-}
-
-.colunaDois{
-    flex: 2 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.titulo{
+.title {
     font-size: 24px;
     font-weight: bold;
     text-transform: capitalize;
 }
-
-.titulo-primeiro{
-    color: #FFF;
+.title-primary {
+    color: #fff;
 }
-
-.titulo-segundo{
+.title-second {
     color: #58af9b;
 }
-
-.descricao{
-    font-size: 14px;
+.description {
+    font-size: 12px;
     font-weight: 300;
     line-height: 30px;
 }
-
-.descricao-colunaUm{
-    color:#FFF;
+.description-primary {
+    color: #fff;
 }
-
-.descricao-colunaDois{
-    color:#7f8c8d;
+.description-second {
+    color: #7f8c8d;
 }
-
-
-.btn{
+.btn {
     border-radius: 15px;
     text-transform: uppercase;
-    color: #FFF;
+    color: #fff;
     font-size: 10px;
     padding: 10px 50px;
     cursor: pointer;
@@ -142,62 +77,289 @@
     width: 150px;
     align-self: center;
     border: none;
-    text-align: center;
-    margin-top: 1rem;
+    margin-top: 10px;
 }
-
-.btn-um{
+.btn-primary {
     background-color: transparent;
-    border: 1px solid #FFF;
+    border: 1px solid #fff;
+    transition: background-color .5s;
 }
-.btn-um:hover{
-    background-color: #FFF;
+.btn-primary:hover {
+    background-color: #fff;
     color: #58af9b;
 }
-
-.btn-dois{
+.btn-second {
     background-color: #58af9b;
     border: 1px solid #58af9b;
+    transition: background-color .5s;
 }
-
-.btn-dois:hover{
-    background-color: #FFF;
+.btn-second:hover {
+    background-color: #fff;
     border: 1px solid #58af9b;
     color: #58af9b;
 }
-
-img{
-    width: 35px;
-    height: 35px;
+.first-content {
+    display: flex;
+}
+.first-content .second-column {
+    z-index: 11;
+}
+.first-column {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media {
+    margin: 8px;
+}
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+.link-social-media .item-social-media {
+    transition: background-color .5s;
+}
+.link-social-media:hover .item-social-media{
+    background-color: #58af9b;
+    color: #fff;
+    border-color: #58af9b;
+}
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media {
     border: 1px solid #bdc3c7;
     border-radius: 50%;
-    line-height: 35px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #95a5a6;
 }
-
-label{
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input {
+    height: 30px;
+    width: 100%;
+    border: none;
+    background-color: #ecf0f1;
+    margin-left: 5px;
+}
+input:-webkit-autofill 
+{    
+    -webkit-box-shadow: 0 0 0px 1000px #ecf0f1 inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+.label-input {
+    background-color: #ecf0f1;
     display: flex;
     align-items: center;
-    background-color: #ecf0f1;
     margin: 8px;
-    padding: 5px;
-    border-radius: 5px;
-    width: 100%;
+}
+.icon-modify {
+    color: #7f8c8d;
+    padding: 0 5px;
 }
 
-label img{
-    margin-right: 10px;
-}
+/* second content*/
 
-label input {
-    border: none;
-    background: none;
-    flex: 1;
-    padding: 20px;
-    font-size: 14px;
-    outline: none;
+.second-content {
+    position: absolute;
+    display: flex;
 }
-.password{
+.second-content .first-column {
+    order: 2;
+    z-index: -1;
+}
+.second-content .second-column {
+    order: 1;
+    z-index: -1;
+}
+.password {
     color: #34495e;
-    font-size: 15px;
-    margin: 15px;
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+
+
+.sign-in-js .first-content .first-column {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .second-column {
+    z-index: 11;
+}
+.sign-in-js .second-content .first-column {
+    z-index: 13;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 1.5s; 
+
+    z-index: 12;
+}
+
+.sign-up-js .content::before {
+    animation: slideout 1.5s;
+
+    z-index: 12;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+    z-index: -1;
+}
+
+.sign-up-js .first-content .second-column {
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first-column {
+    z-index: 13;    
+}
+
+
+/* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE*/
+.sign-in-js .first-content .second-column {
+
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+.sign-up-js .second-content .second-column {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+/*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
+
+@keyframes deslocamentoEsq {
+
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+        opacity: .5;
+        /* z-index: 12; NÃO HÁ NECESSIDADE */
+    }
+
+    50% {
+        left: -100px;
+        opacity: .2;
+        /* z-index: 12; NÃO HÁ NECESSIDADE */
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentoDir {
+
+    from {
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+    }
+
+    50% {
+        left: 100px;
+        /* z-index: 12; NÃO HÁ NECESSIDADE*/
+        /* background-color: yellow;  Exemplo que dei no vídeo*/
+    }
+
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+
+/*ANIMAÇÃO CSS*/
+
+@keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
 }
