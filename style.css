@@ -23,7 +23,7 @@ img{
     height: 100vh;
     background-color: #ecf0f1;
 }
-.content {
+.conteudo {
     background-color: #fff;
     border-radius: 15px;
     width: 960px;
@@ -32,7 +32,7 @@ img{
     align-items: center;
     position: relative;
 }
-.content::before {
+.conteudo::before {
     content: "";
     position: absolute;
     background-color: #58af9b;
@@ -44,26 +44,26 @@ img{
 
     left: 0;
 }
-.title {
+.titulo {
     font-size: 24px;
     font-weight: bold;
     text-transform: capitalize;
 }
-.title-primary {
+.titulo-primeiro {
     color: #fff;
 }
-.title-second {
+.titulo-segundo {
     color: #58af9b;
 }
-.description {
+.descricao {
     font-size: 12px;
     font-weight: 300;
     line-height: 30px;
 }
-.description-primary {
+.descricao-primeiro{
     color: #fff;
 }
-.description-second {
+.descricao-segundo {
     color: #7f8c8d;
 }
 .btn {
@@ -79,37 +79,37 @@ img{
     border: none;
     margin-top: 10px;
 }
-.btn-primary {
+.btn-primeiro {
     background-color: transparent;
     border: 1px solid #fff;
     transition: background-color .5s;
 }
-.btn-primary:hover {
+.btn-primeiro:hover {
     background-color: #fff;
     color: #58af9b;
 }
-.btn-second {
+.btn-segundo {
     background-color: #58af9b;
     border: 1px solid #58af9b;
     transition: background-color .5s;
 }
-.btn-second:hover {
+.btn-segundo:hover {
     background-color: #fff;
     border: 1px solid #58af9b;
     color: #58af9b;
 }
-.first-content {
+.primeiro-conteudo {
     display: flex;
 }
-.first-content .second-column {
+.primeiro-conteudo .segunda-coluna {
     z-index: 11;
 }
-.first-column {
+.primeira-coluna {
     text-align: center;
     width: 40%;
     z-index: 10;
 }
-.second-column {
+.segunda-coluna {
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -118,13 +118,13 @@ img{
 .social-media {
     margin: 8px;
 }
-.link-social-media:not(:first-child){
+.img-social-media:not(:first-child){
     margin-left: 10px;
 }
-.link-social-media .item-social-media {
+.img-social-media .item-social-media {
     transition: background-color .5s;
 }
-.link-social-media:hover .item-social-media{
+.img-social-media:hover .item-social-media{
     background-color: #58af9b;
     color: #fff;
     border-color: #58af9b;
@@ -172,15 +172,15 @@ input:-webkit-autofill
 
 /* second content*/
 
-.second-content {
+.segundo-conteudo {
     position: absolute;
     display: flex;
 }
-.second-content .first-column {
+.segundo-conteudo .primeira-coluna {
     order: 2;
     z-index: -1;
 }
-.second-content .second-column {
+.segundo-conteudo .segunda-coluna {
     order: 1;
     z-index: -1;
 }
@@ -196,18 +196,18 @@ input:-webkit-autofill
 
 
 
-.sign-in-js .first-content .first-column {
+.sign-in-js .primeiro-conteudo .primeira-coluna {
     z-index: -1;
 }
 
-.sign-in-js .second-content .second-column {
+.sign-in-js .segundo-conteudo .segunda-coluna {
     z-index: 11;
 }
-.sign-in-js .second-content .first-column {
+.sign-in-js .segundo-conteudo .primeira-coluna {
     z-index: 13;
 }
 
-.sign-in-js .content::before {
+.sign-in-js .conteudo::before {
     left: 60%;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -218,35 +218,35 @@ input:-webkit-autofill
     z-index: 12;
 }
 
-.sign-up-js .content::before {
+.sign-up-js .conteudo::before {
     animation: slideout 1.5s;
 
     z-index: 12;
 }
 
-.sign-up-js .second-content .first-column,
-.sign-up-js .second-content .second-column {
+.sign-up-js .segundo-conteudo .primeira-coluna,
+.sign-up-js .segundo-conteudo .segunda-coluna {
     z-index: -1;
 }
 
-.sign-up-js .first-content .second-column {
+.sign-up-js .primeiro-conteudo .segunda-coluna {
     z-index: 11;
 }
 
-.sign-up-js .first-content .first-column {
+.sign-up-js .primeiro-conteudo .primeira-coluna {
     z-index: 13;    
 }
 
 
 /* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE*/
-.sign-in-js .first-content .second-column {
+.sign-in-js .primeiro-conteudo .segunda-coluna {
 
     z-index: -1;
     position: relative;
     animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
 }
 
-.sign-up-js .second-content .second-column {
+.sign-up-js .segundo-conteudo .segunda-coluna {
     position: relative;
     z-index: -1;
     animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
